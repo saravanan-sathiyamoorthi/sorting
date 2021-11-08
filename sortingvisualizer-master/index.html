@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <!-- <div> -->
     <body>
@@ -24,34 +25,35 @@
                     <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
                     <button id="a_generate">Generate New Array!</button>
                 </div>
-
+                
                 <div class="header_right">
                     <p class="nav-heading">Sorting visualizer</p>
-
+                    
                     <div class="algos">
                         <button>Bubble</button>
                         <button>Selection</button>
                         <button>Insertion</button>
                         <button>Merge</button>
                         <button>Quick</button>
+                        <button id="compare-btn">Compare</button>
                     </div>
                 </div>
-
+               
             </nav>
         </header>
 
         <section>
             <div id="array_container"></div>
         </section>
-
-        <footer>
-            <div><p>
-                Click the button to compare  the algorithms
-            </p> </div>
-            <div>
-                <a href="compare/compare.html"><button id="compare-btn">Compare</button></a></div> 
-                    
-        </footer>
+        <section>
+            <div class="graph-container">
+                <!-- <canvas class="myChart" id="chart-1"></canvas>
+                <canvas class="myChart" id="chart-2"></canvas>
+                <canvas class="myChart" id="chart-3"></canvas>
+                <canvas class="myChart" id="chart-4"></canvas>
+                <canvas class="myChart" id="chart-5"></canvas> -->
+              </div>
+        </section>
         <div>&copy;Saravanan Sathiyamoorthi - 2021</div>
 
         <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
@@ -62,6 +64,7 @@
         <script src="./scripts/insertion_sort.js"></script>
         <script src="./scripts/merge_sort.js"></script>
         <script src="./scripts/quick_sort.js"></script>
+        <script src="./scripts/comaprison.js"></script>
     </body>
 <!-- </div> -->
 
