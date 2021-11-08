@@ -1,19 +1,18 @@
-
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Baloo Bhaina 2', cursive;
+  font-family: "Baloo Bhaina 2", cursive;
   font-size: large;
   font-weight: bold;
   text-transform: uppercase;
-  }
+}
 
-  body{
-    background-color: rgb(27, 27, 27);
-    color: #fff;
-    padding: 0%;
-    margin: 0%;
-  }
+body {
+  background-color: rgb(27, 27, 27);
+  color: #fff;
+  padding: 0%;
+  margin: 0%;
+}
 
 nav {
   background-color: rgb(27, 27, 27);
@@ -21,9 +20,9 @@ nav {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30% 60%;
-      grid-template-columns: 30% 60%;
+  grid-template-columns: 30% 60%;
   -webkit-column-gap: 10%;
-          column-gap: 10%;
+  column-gap: 10%;
   padding: 0% 5%;
   /* border-bottom: 1px solid #00ffff; */
 }
@@ -32,7 +31,7 @@ nav .array-inputs {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
+  grid-template-columns: 60% 40%;
   place-content: center;
   padding: 5% 0%;
 }
@@ -68,8 +67,8 @@ nav .header_right {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 nav .header_right .nav-heading {
@@ -133,8 +132,8 @@ section {
   /* background-color: black; */
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns:100%;
-      grid-template-columns: 100%;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
 }
 
 section #Info_Cont1 {
@@ -145,7 +144,7 @@ section #array_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items:center;
+  align-items: center;
   width: 100%;
   height: 75vh;
 }
@@ -158,22 +157,28 @@ section #Info_Cont2 {
   display: none;
 }
 
-footer{
-  color: #fff;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-#compare-btn{
-  border: 1px solid #00ffff;
+
+#compare-btn {
   border-radius: 15px;
-  background-color: transparent;
+  background-color: crimson;
   color: #fff;
-  padding: 5% 20%;
   cursor: pointer;
 }
-#compare-btn:hover{
+#compare-btn:hover {
   background-color: #00ffff;
   color: rgb(27, 27, 27);
+}
+
+.graph-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding: 10px;
+}
+.myChart {
+  width: 100% !important;
+  height: 45vh !important;
+  border: 1px solid #000;
+  padding: 15px;
+  background-color: #ccc;
 }
