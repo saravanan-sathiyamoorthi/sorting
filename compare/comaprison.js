@@ -1,6 +1,7 @@
 let graph_container = document.querySelector(".graph-container");
 let graphMainContainer = document.querySelector("#graph-main");
 let multiGraphMainContainer = document.querySelector("#multi-graph-main");
+let test = document.querySelector("#test");
 
 let fields;
 function compare_algos() {
@@ -11,7 +12,7 @@ function compare_algos() {
   Quick("Quick");
   console.log("Comparison data", vis_data);
   fields = Object.keys(vis_data);
-  comparison_graph();
+ comparison_graph();
 }
 // elements[0].onload = console.log(vis_data);
 function getGroupedData() {
@@ -92,7 +93,7 @@ function graph(target, type, labels, data) {
 }
 
 function multiGraph(target, type, labels, data) {
-  let datasets = [];
+  let datasets = [], xLabel = [];
   labels.forEach((field, index) => {
     datasets = [
       ...datasets,
@@ -108,10 +109,13 @@ function multiGraph(target, type, labels, data) {
       },
     ];
   });
+  xLabel = Object.keys(vis_data[Object.keys(vis_data)[0]]);
+  // console.log("X labels", xLabel);
   const chart = new Chart(target, {
+    // labels: xLabel,
     type: type,
     data: {
-      labels: labels,
+      labels: xLabel,
       datasets: datasets,
     },
     options: {
@@ -124,7 +128,7 @@ function multiGraph(target, type, labels, data) {
       plugins: {
         title: {
           display: true,
-          text: "Chart.js Line Chart - Multi Axis",
+          text: "Time Complexity Comparision",
         },
       },
       scales: {
@@ -151,5 +155,16 @@ function multiGraph(target, type, labels, data) {
 compare_btn.addEventListener("click", () => {
   visualization_container.style.display = "none";
   graph_main_container.style.display = "block";
+
   compare_algos();
 });
+
+// test.addEventListener('click', () => {
+//  let array = [0,25,37];
+//  for(let i=0;i<array.length;i++){
+//    inp_as.value = array[i];
+//    generate_array();
+//    compare_algos();
+//  }
+// })
+
