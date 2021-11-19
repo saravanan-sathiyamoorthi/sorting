@@ -155,16 +155,21 @@ function multiGraph(target, type, labels, data) {
 compare_btn.addEventListener("click", () => {
   visualization_container.style.display = "none";
   graph_main_container.style.display = "block";
-
   compare_algos();
+  // generate_array(50);
 });
 
 // test.addEventListener('click', () => {
-//  let array = [0,25,37];
+//  let array = [0,25,37,97,120];
 //  for(let i=0;i<array.length;i++){
-//    inp_as.value = array[i];
-//    generate_array();
-//    compare_algos();
+//   console.log(inp_as.value);
+//   inp_as.innerHTML = `value = ${array[i]}`;
+//   generate_array(array[i]);
+//   compare_algos();
+//   console.log(array[i]);
+// //    inp_as.value = array[i];
+// //    generate_array();
+// //    compare_algos();
 //  }
 // })
 
