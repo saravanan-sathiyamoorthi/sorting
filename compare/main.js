@@ -3,7 +3,6 @@ var inp_as = document.getElementById("a_size"),
   array_size = inp_as.value;
 var inp_gen = document.getElementById("a_generate");
 var inp_aspeed = document.getElementById("a_speed");
-//var array_speed=document.getElementById('a_speed').value;
 var compare_btn = document.querySelector("#compare-btn");
 var butts_algos = document.querySelectorAll(".algos button");
 let visualization_container = document.querySelector("#visualization");
@@ -13,8 +12,8 @@ var divs = [];
 var margin_size;
 var cont = document.getElementById("array_container");
 cont.style = "flex-direction:row";
-
 let vis_data = {};
+
 //Array generation and updation.
 
 inp_gen.addEventListener("click", generate_array);
@@ -25,8 +24,7 @@ function generate_array() {
   visualization_container.style.display = "block";
   graph_main_container.style.display = "none";
   for (var i = 0; i < array_size; i++) {
-    div_sizes[i] =
-      Math.floor(Math.random() * 0.5 * (inp_as.max - inp_as.min)) + 10;
+    div_sizes[i] = (Math.random() * 0.5 * (inp_as.max - inp_as.min));
     divs[i] = document.createElement("div");
     cont.appendChild(divs[i]);
     margin_size = 0.1;
@@ -36,15 +34,10 @@ function generate_array() {
       "%; background-color:rgb(255,12,147); width:" +
       (100 / array_size - 2 * margin_size) +
       "%; height:" +
-      div_sizes[i] * 2.5 +
+      div_sizes[i] * 4 +
       "%;";
-  }
-
-  //   vis_data = {
-  //     ...vis_data,
-  //     [array_size]: { array: div_sizes.slice(0, array_size), time: {} },
-  //   };
-  //   console.log("array data", vis_data);
+    }
+    console.log("Array is : ",div_sizes);
 }
 
 function update_array_size() {

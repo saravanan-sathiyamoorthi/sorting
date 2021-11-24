@@ -159,17 +159,3 @@ compare_btn.addEventListener("click", () => {
   // generate_array(50);
 });
 
-// test.addEventListener('click', () => {
-//  let array = [0,25,37,97,120];
-//  for(let i=0;i<array.length;i++){
-//   console.log(inp_as.value);
-//   inp_as.innerHTML = `value = ${array[i]}`;
-//   generate_array(array[i]);
-//   compare_algos();
-//   console.log(array[i]);
-// //    inp_as.value = array[i];
-// //    generate_array();
-// //    compare_algos();
-//  }
-// })
-

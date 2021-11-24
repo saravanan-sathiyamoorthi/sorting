@@ -12,7 +12,7 @@ function vis_speed() {
       speed = 100;
       break;
     case 3:
-      speed = 1000;
+      speed = 500;
       break;
   }
 
@@ -30,7 +30,7 @@ function div_update(cont, height, color) {
       "%; width:" +
       (100 / array_size - 2 * margin_size) +
       "%; height:" +
-      height * 2.5 +
+      height * 4 +
       "%; background-color:" +
       color +
       ";";
