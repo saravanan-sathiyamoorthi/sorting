@@ -15,8 +15,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
-  <!-- <div> -->
   <body>
+
     <header>
       <nav>
         <div class="array-inputs">
@@ -25,18 +25,16 @@
             id="a_size"
             type="range"
             min="0"
-            max="380"
+            max="50"
             step="1"
-            value="180"
+            value="50"
           />
           <p>Speed of the algorithm:</p>
-          <input id="a_speed" type="range" min="1" max="5" step="1" value="4" />
+          <input id="a_speed" type="range" min="1" max="3" step="1" value="2" />
           <button id="a_generate">Generate New Array!</button>
         </div>
-
         <div class="header_right">
           <p class="nav-heading">Sorting visualizer</p>
-
           <div class="algos">
             <button>Bubble</button>
             <button>Selection</button>
@@ -44,7 +42,6 @@
             <button>Merge</button>
             <button>Quick</button>
             <button id="compare-btn">Compare</button>
-            <!-- <button id="test">test</button> -->
           </div>
         </div>
       </nav>
@@ -63,10 +60,7 @@
     <div>&copy;Saravanan Sathiyamoorthi - 2021</div>
 
     <script src="./compare/main.js"></script>
-    <!--This should be at the end of body and should be loaded before sorts.js-->
     <script src="./style/visualizations.js"></script>
-    <!--This should be loaded after main.js-->
-
     <script src="./algorithms/bubblesort.js"></script>
     <script src="./algorithms/selectionsort.js"></script>
     <script src="./algorithms/insertionsort.js"></script>
@@ -74,5 +68,4 @@
     <script src="./algorithms/quicksort.js"></script>
     <script src="./compare/comaprison.js"></script>
   </body>
-  <!-- </div> -->
 </html>

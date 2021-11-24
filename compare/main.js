@@ -36,7 +36,7 @@ function generate_array() {
       "%; background-color:rgb(255,12,147); width:" +
       (100 / array_size - 2 * margin_size) +
       "%; height:" +
-      div_sizes[i] * 0.42 +
+      div_sizes[i] * 2.5 +
       "%;";
   }
 

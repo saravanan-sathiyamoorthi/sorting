@@ -6,19 +6,13 @@ function vis_speed() {
   var array_speed = inp_aspeed.value;
   switch (parseInt(array_speed)) {
     case 1:
-      speed = 1;
-      break;
-    case 2:
       speed = 10;
       break;
-    case 3:
+    case 2:
       speed = 100;
       break;
-    case 4:
+    case 3:
       speed = 1000;
-      break;
-    case 5:
-      speed = 10000;
       break;
   }
 
@@ -36,7 +30,7 @@ function div_update(cont, height, color) {
       "%; width:" +
       (100 / array_size - 2 * margin_size) +
       "%; height:" +
-      height * 0.42 +
+      height * 2.5 +
       "%; background-color:" +
       color +
       ";";
