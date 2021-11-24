@@ -7,6 +7,7 @@ var compare_btn = document.querySelector("#compare-btn");
 var butts_algos = document.querySelectorAll(".algos button");
 let visualization_container = document.querySelector("#visualization");
 let graph_main_container = document.querySelector("#graph-section");
+
 var div_sizes = [];
 var divs = [];
 var margin_size;

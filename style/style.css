@@ -24,7 +24,6 @@ nav {
   -webkit-column-gap: 10%;
   column-gap: 10%;
   padding: 0% 5%;
-  /* border-bottom: 1px solid #00ffff; */
 }
 
 nav .array-inputs {
@@ -129,7 +128,6 @@ nav .header_right .algos .butt_unselected:hover {
 }
 
 section {
-  /* background-color: black; */
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
@@ -194,4 +192,8 @@ footer {
   width: 80% !important;
   height: auto !important;
   margin: auto;
+}
+
+.footer{
+  text-align: center;
 }

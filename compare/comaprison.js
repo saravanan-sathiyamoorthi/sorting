@@ -110,7 +110,6 @@ function multiGraph(target, type, labels, data) {
     ];
   });
   xLabel = Object.keys(vis_data[Object.keys(vis_data)[0]]);
-  // console.log("X labels", xLabel);
   const chart = new Chart(target, {
     // labels: xLabel,
     type: type,
@@ -158,4 +157,3 @@ compare_btn.addEventListener("click", () => {
   compare_algos();
   // generate_array(50);
 });
-
